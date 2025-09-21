@@ -14,6 +14,18 @@
 
 public class Group02 {
   public static void main(String[] args) {
+    int number = 5625;
+    int sumOfDigits = 0;
+    int productOfDigits = 1;
+    int digitDivider = 10;
 
+    while (number != 0) {
+      sumOfDigits += number % digitDivider;
+      productOfDigits *= number % digitDivider;
+      number /= digitDivider;
+    }
+
+    System.out.println("The sum of the digits of 5256 is " + sumOfDigits);
+    System.out.println("The product of the digits of 5256 is " + productOfDigits);
   }
 }
