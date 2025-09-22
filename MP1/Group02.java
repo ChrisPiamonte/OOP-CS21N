@@ -15,20 +15,20 @@
 public class Group02 {
   public static void main(String[] args) {
     // Initialization of variables
-    int number = 5625;
-    int sumOfDigits = 0;
-    int productOfDigits = 1;
-    int digitDivider = 10;
+    int intNumber = 5625;
+    int intSumOfDigits = 0;
+    int intProductOfDigits = 1;
+    int intDigitDivider = 10;
 
     // Loop for computing the sum and product of each digits
-    while (number != 0) {
-      sumOfDigits += number % digitDivider;         // Obtain the sum of the digits of number
-      productOfDigits *= number % digitDivider;     // Obtain the product of the digits of number
-      number /= digitDivider;                       // Removes the last digit of the number
+    while (intNumber != 0) {
+      intSumOfDigits += intNumber % intDigitDivider;         // Obtain the sum of the digits of number
+      intProductOfDigits *= intNumber % intDigitDivider;     // Obtain the product of the digits of number
+      intNumber /= intDigitDivider;                       // Removes the last digit of the number
     }
 
     // Printing of Outputs 
-    System.out.println("The sum of the digits of 5256 is " + sumOfDigits);
-    System.out.println("The product of the digits of 5256 is " + productOfDigits);
+    System.out.println("The sum of the digits of 5256 is " + intSumOfDigits);
+    System.out.println("The product of the digits of 5256 is " + intProductOfDigits);
   }
 }
