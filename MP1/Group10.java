@@ -14,7 +14,6 @@
 
 public class Group10 {
   public static void main(String[] args) {
-
     // Initialize variables
     int n = 10;      // Number of terms in the fibonacci sequence
     int intFirstNumber = 0;     // First number in the sequence
