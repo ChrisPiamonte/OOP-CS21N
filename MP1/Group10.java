@@ -12,39 +12,40 @@
  * ==========================================================
  */
 
-  //Trial push
 public class Group10 {
   public static void main(String[] args) {
-    // Initialize variables
-    int n = 10;      // Number of terms in the fibonacci sequence
-    int intFirstNumber = 0;     // First number in the sequence
-    int intSecondNumber = 1;    // Second number in the sequence
-    int intPlaceholder = 0;     // Placeholder for the next value in the sequence
-    int intSum = 0;     // Variable for the sum of all values
+    // Number of Fibonacci terms to be printed
+    int intMaxTerms = 10;      
+
+    // Initialize the first two Fibonacci numbers: 0 and 1
+    int intPreviousTerm = 0;      // Second Most Recent Term
+    int intCurrentTerm = 1;       // Most Recent Term
+    
+    // Placeholder for the succeeding number
+    int intNextTerm;
+
+    // This keeps the running total of the numbers
+    int intSum = 0;
         
-    // Use loop to print and add values
-    for (int i = 0; i < n; i++) {
-<<<<<<< HEAD
-      // Print the first two values in the Fibonacci sequence
-      System.out.print(firstAddend + ", "); // Formatting purposes
+    System.out.print("\n\n\n");
+    // Generate intMaxTerms Fibonacci 
+    for (int intIteration = 0; intIteration < intMaxTerms; intIteration++) {
+      // Print second most recent term
+      System.out.print(intPreviousTerm);
 
-      // The succeeding value in the sequence can be acquired by adding the two numbers before it
-      succeedingValue = firstAddend + secondAddend;
+      if (intIteration != (intMaxTerms - 1)) {
+        System.out.print(", ");
+      }
 
-      // Update the values of the two numbers
-      firstAddend = secondAddend;
-      secondAddend = succeedingValue;
+      // The succeeding value in the sequence can be acquired by adding the two most recent terms
+      intNextTerm = intPreviousTerm + intCurrentTerm;       // Add the two most recent terms and assign it to the next term
+      intSum += intPreviousTerm;                            // Update the sum
 
-      // Add the current values together
-      summationValue = summationValue + succeedingValue;
-=======
-      System.out.print(intFirstNumber + " ");     // Print each values in the sequence
-      intPlaceholder = intFirstNumber + intSecondNumber;      // Add the initial 2 values and assign it to the placeholder 
-      intFirstNumber = intSecondNumber;       // Assign the second number to the first number
-      intSecondNumber = intPlaceholder;       // Assign the value in our placceholder to our intSecondNumber
-      intSum += intFirstNumber;       // Add all the values
->>>>>>> 277efa5220f69fb955ac7be8b84d272710e71a7c
+      intPreviousTerm = intCurrentTerm;    // Assign the former most recent term to the second most recent
+      intCurrentTerm = intNextTerm;        // Assign the value in our placeholder as the new most recent
+                    
     }
-    System.out.println("\nSum of all values: " + intSum);   // Print the sum of all values
+    // Print the sum of the printed Fibonacci terms
+    System.out.print("\nSum of all values: " + intSum + "\n\n\n");
   }
 }
