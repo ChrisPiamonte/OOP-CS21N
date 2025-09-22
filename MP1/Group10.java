@@ -29,7 +29,7 @@ public class Group10 {
     // For loop was chosen since it already integrates a counter (i) which is necessary for the sequence's limit
     for (int i = 0; i < n; i++) {
       // Print the first two values in the Fibonacci sequence
-      System.out.print(firstAddend + ", "); // Formating purposes
+      System.out.print(firstAddend + ", "); // Formatting purposes
 
       // The succeeding value in the sequence can be acquired by adding the two numbers before it
       succeedingValue = firstAddend + secondAddend;
