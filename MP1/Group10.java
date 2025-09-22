@@ -12,22 +12,19 @@
  * ==========================================================
  */
 
+  //Trial push
 public class Group10 {
   public static void main(String[] args) {
-
-    // Print the first n Fibonacci numbers 
-    int n = 10;
-
-    // Initialize the first two addends to generate the Fibonacci sequence
-      // Sequence initialization (these variables will represent the two numbers that forms the succeeding values)
-    int firstAddend = 0, secondAddend = 1;
-
-    // The second addend is the current highest value at this point in program time
-    int succeedingValue = secondAddend;
-    int summationValue = succeedingValue; // Initialize the variable for the sum of all the numbers in the sequence
-
-    // For loop was chosen since it already integrates a counter (i) which is necessary for the sequence's limit
+    // Initialize variables
+    int n = 10;      // Number of terms in the fibonacci sequence
+    int intFirstNumber = 0;     // First number in the sequence
+    int intSecondNumber = 1;    // Second number in the sequence
+    int intPlaceholder = 0;     // Placeholder for the next value in the sequence
+    int intSum = 0;     // Variable for the sum of all values
+        
+    // Use loop to print and add values
     for (int i = 0; i < n; i++) {
+<<<<<<< HEAD
       // Print the first two values in the Fibonacci sequence
       System.out.print(firstAddend + ", "); // Formatting purposes
 
@@ -40,9 +37,14 @@ public class Group10 {
 
       // Add the current values together
       summationValue = summationValue + succeedingValue;
+=======
+      System.out.print(intFirstNumber + " ");     // Print each values in the sequence
+      intPlaceholder = intFirstNumber + intSecondNumber;      // Add the initial 2 values and assign it to the placeholder 
+      intFirstNumber = intSecondNumber;       // Assign the second number to the first number
+      intSecondNumber = intPlaceholder;       // Assign the value in our placceholder to our intSecondNumber
+      intSum += intFirstNumber;       // Add all the values
+>>>>>>> 277efa5220f69fb955ac7be8b84d272710e71a7c
     }
-
-    // Print the sum of all the numbers in the Fibonacci Sequence once the loop ends
-    System.out.print("\nSummation: " + summationValue + "\n\n");
+    System.out.println("\nSum of all values: " + intSum);   // Print the sum of all values
   }
 }
