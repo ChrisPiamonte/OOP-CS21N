@@ -15,16 +15,16 @@ public class Group01 {
     public static void main(String[] args) {
         // ---------- First Part: Check if a hardcoded year is a Leap Year ----------
         
-        int year = 2024; // The year we want to check
+        int intYear = 2000; // The year we want to check
 
         /* Leap year rule:
         - Divisible by 400  -> Leap Year
         - Divisible by 4 but NOT by 100 -> Leap Year
         - Otherwise -> Not a Leap Year */
-        if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
-            System.out.println(year + " is a Leap Year.");
+        if ((intYear % 400 == 0) || (intYear % 4 == 0 && intYear % 100 != 0)) {
+            System.out.println(intYear + " is a Leap Year.");
         } else {
-            System.out.println(year + " is NOT a Leap Year.");
+            System.out.println(intYear + " is NOT a Leap Year.");
         }
 
         System.out.println(); // Blank line for clarity
