@@ -20,14 +20,14 @@ public class Group02 {
     int intProductOfDigits = 1;
     int intDigitDivider = 10;
 
-    // Loop for computing the sum and product of each digits
+    // Loop for computing the sum and product of each digits of intNumber
     while (intNumber != 0) {
-      intSumOfDigits += intNumber % intDigitDivider;         // Obtain the sum of the digits of number
-      intProductOfDigits *= intNumber % intDigitDivider;     // Obtain the product of the digits of number
-      intNumber /= intDigitDivider;                       // Removes the last digit of the number
+      intSumOfDigits += intNumber % intDigitDivider;         // Obtain the sum of the digits of intNumber
+      intProductOfDigits *= intNumber % intDigitDivider;     // Obtain the product of the digits of intNumber
+      intNumber /= intDigitDivider;                          // Removes the last digit of intNumber
     }
 
-    // Printing of Outputs 
+    // Printing of outputs 
     System.out.println("The sum of the digits of 5256 is " + intSumOfDigits);
     System.out.println("The product of the digits of 5256 is " + intProductOfDigits);
   }
