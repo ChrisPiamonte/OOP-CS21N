@@ -27,7 +27,6 @@ public class Group01 {
         } else {
             System.out.println(intYear + " is NOT a Leap Year.");
         }
-
         System.out.println(); // Blank line for clarity
 
         // ---------- Challenge: List all Leap Years between 1900 and 2100 ----------
@@ -38,7 +37,7 @@ public class Group01 {
         for (int y = 1900; y <= 2100; y++) {
             // Apply the same leap year rule
             if ((y % 400 == 0) || (y % 4 == 0 && y % 100 != 0)) {
-                System.out.println(y); // Print the leap year
+                System.out.println("| "+y + " |"); // Print the leap year
             }
         }
     }
