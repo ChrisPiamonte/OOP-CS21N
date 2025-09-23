@@ -19,6 +19,7 @@ public class Group02 {
     int intSumOfDigits = 0;
     int intProductOfDigits = 1;
     int intDigitDivider = 10;
+    int intOriginalNumber = intNumber; 
 
     // Loop for computing the sum and product of each digits of intNumber
     while (intNumber != 0) {
@@ -28,7 +29,7 @@ public class Group02 {
     }
 
     // Printing of outputs 
-    System.out.println("The sum of the digits of 5625 is " + intSumOfDigits);
-    System.out.println("The product of the digits of 5625 is " + intProductOfDigits);
+    System.out.printf("The sum of the digits of %d is %d%n", intOriginalNumber, intSumOfDigits);
+    System.out.printf("The product of the digits of %d is %d%n", intOriginalNumber, intProductOfDigits);
   }
 }
