@@ -11,40 +11,26 @@ public class Group09
 {
     public static void main(String[] args)
     {
-        int sumOfDivisors = 0; // integer variable to store the sum of divisors.
-        int MAXIMUM_NUMBER = 500; // integer variable for upper bound range in checking for perfect numbers.
+        
+        System.out.println("The following are perfect numbers ranging from 1 to 500: "); // Display output statement
 
-        System.out.println("The following are perfect numbers ranging from 1 to " + MAXIMUM_NUMBER + ":"); // Display output statement
-
-        /*
-         * Loop through all numbers from 1 to MAXIMUM_NUMBER
-         * to check which ones are perfect numbers.
-         */
-        for (int currentNumber = 1; currentNumber <= MAXIMUM_NUMBER; currentNumber++)
+        for (int currentNumber = 1; currentNumber <= 500; currentNumber++) // Loop through all numbers from 1 to 500
         {
-            sumOfDivisors = 0; // Reset divisor sum for each iteration
+            int properDivisorSum = 0; // initialize properDivisorSum to 0 for each iteration
 
-            /*
-             * Check all possible divisors of the current number.
-             * Check only up to currentNumber / 2
-             * since no divisor (other than the number itself)
-             * can be larger than half of the number.
-             */
-            for (int possibleDivisor = 1; possibleDivisor <= (currentNumber / 2); possibleDivisor++)
+            for (int possibleProperDivisor = 1; possibleProperDivisor <= currentNumber / 2; possibleProperDivisor++) //another loop to go through each number from 1 to half of the current number as the divisor
             {
-                // If possibleDivisor divides currentNumber evenly, add it to the sum.
-                if (currentNumber % possibleDivisor == 0)
+                if (currentNumber % possibleProperDivisor == 0) // checks if currentNumber and possibleProperDivisor divides without a remainder
                 {
-                     sumOfDivisors += possibleDivisor;
+                    properDivisorSum += possibleProperDivisor; // if true, add it to the properDivisorSum 
                 }
             }
-            // If the sum of divisors equals the current number, the current number is a perfect number.
-            if (sumOfDivisors == currentNumber)
-            {
-                System.out.println(currentNumber); // Print the current number.
 
-                // Hello World
+            if (properDivisorSum == currentNumber) // checks if the properDivisorSum is equal to the currentNumber
+            {
+                System.out.println(currentNumber); // if true, print the currentNumber (it is a perfect number)
             }
-        }   
+        }
+
     }
 }
