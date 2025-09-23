@@ -45,8 +45,7 @@ public class Group10 {
       intSum += intPreviousTerm;                            // Update the sum
 
       intPreviousTerm = intCurrentTerm;    // Assign the former most recent term as the second most recent term
-      intCurrentTerm = intNextTerm;        // Assign the value in our placeholder as the new most recent term
-                    
+      intCurrentTerm = intNextTerm;        // Assign the value in our placeholder as the new most recent term            
     }
     // Print the sum of the printed Fibonacci terms + line breaks
     System.out.print("\n| Sum of all values: " + intSum + "\n\n\n\n");
