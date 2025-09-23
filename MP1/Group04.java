@@ -32,24 +32,24 @@ public class Group04 {
     }
     // Print to terminal
     if (charGradeLetter == 'A') {
-      System.out.println("Grade: " + intGrade);
-      System.out.println("Grade: " + charGradeLetter);
+      System.out.println("Numerical Grade: " + intGrade);
+      System.out.println("Letter Grade: " + charGradeLetter);
       System.out.println("Remark: Excellent");
     } else if (charGradeLetter == 'B') {
-      System.out.println("Grade: " + intGrade);
-      System.out.println("Grade: " + charGradeLetter);
+      System.out.println("Numerical Grade: " + intGrade);
+      System.out.println("Letter Grade: " + charGradeLetter);
       System.out.println("Remark: Good");
     } else if (charGradeLetter == 'C') {
-      System.out.println("Grade: " + intGrade);
-      System.out.println("Grade: " + charGradeLetter);
+      System.out.println("Numerical Grade: " + intGrade);
+      System.out.println("Letter Grade: " + charGradeLetter);
       System.out.println("Remark: Passed");
     } else if (charGradeLetter == 'D') {
-      System.out.println("Grade: " + intGrade);
-      System.out.println("Grade: " + charGradeLetter);
+      System.out.println("Numerical Grade: " + intGrade);
+      System.out.println("Letter Grade: " + charGradeLetter);
       System.out.println("Remark: Needs improvement");
     } else {
-      System.out.println("Grade: " + intGrade);
-      System.out.println("Grade: " + charGradeLetter);
+      System.out.println("Numerical Grade: " + intGrade);
+      System.out.println("Letter Grade: " + charGradeLetter);
       System.out.println("Remark: Failed");
     }
   }
