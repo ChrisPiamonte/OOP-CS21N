@@ -11,6 +11,7 @@
  *   unless instructed.
  * ==========================================================
  */
+
 public class Group01 {
     public static void main(String[] args) {
         // ---------- First Part: Check if a hardcoded year is a Leap Year ----------
