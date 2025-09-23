@@ -28,7 +28,7 @@ public class Group02 {
     }
 
     // Printing of outputs 
-    System.out.println("The sum of the digits of 5256 is " + intSumOfDigits);
-    System.out.println("The product of the digits of 5256 is " + intProductOfDigits);
+    System.out.println("The sum of the digits of 5625 is " + intSumOfDigits);
+    System.out.println("The product of the digits of 5625 is " + intProductOfDigits);
   }
 }
