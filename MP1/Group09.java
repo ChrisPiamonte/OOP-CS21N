@@ -11,14 +11,20 @@ public class Group09
 {
     public static void main(String[] args)
     {
+        // Initialize variables
+        int currentNumber;
+        int MAXIMUM_NUMBER = 500;
+        int possibleProperDivisor;
+        int properDivisorSum = 0;
+
         
         System.out.println("The following are perfect numbers ranging from 1 to 500: "); // Display output statement
 
-        for (int currentNumber = 1; currentNumber <= 500; currentNumber++) // Loop through all numbers from 1 to 500
+        for (currentNumber = 1; currentNumber <= MAXIMUM_NUMBER; currentNumber++) // Loop through all numbers from 1 to 500
         {
-            int properDivisorSum = 0; // initialize properDivisorSum to 0 for each iteration
+            properDivisorSum = 0; // Initialize properDivisorSum to 0 for each iteration
 
-            for (int possibleProperDivisor = 1; possibleProperDivisor <= currentNumber / 2; possibleProperDivisor++) //another loop to go through each number from 1 to half of the current number as the divisor
+            for (possibleProperDivisor = 1; possibleProperDivisor <= currentNumber / 2; possibleProperDivisor++) //another loop to go through each number from 1 to half of the current number as the divisor
             {
                 if (currentNumber % possibleProperDivisor == 0) // checks if currentNumber and possibleProperDivisor divides without a remainder
                 {
