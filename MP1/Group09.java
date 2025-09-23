@@ -42,6 +42,8 @@ public class Group09
             if (sumOfDivisors == currentNumber)
             {
                 System.out.println(currentNumber); // Print the current number.
+
+                // Hello World
             }
         }   
     }
