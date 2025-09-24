@@ -34,11 +34,12 @@ public class Group01 {
         System.out.println("Leap years between 1900 and 2100:");
 
         // Loop through each year in the range 1900–2100
-        for (int y = 1900; y <= 2100; y++) {
+        for (int intMinyear = 1900; intMinyear <= 2100; intMinyear++) {
             // Apply the same leap year rule
-            if ((y % 400 == 0) || (y % 4 == 0 && y % 100 != 0)) {
-                System.out.println("| "+y + " |"); // Print the leap year
+            if ((intMinyear % 400 == 0) || (intMinyear % 4 == 0 && intMinyear % 100 != 0)) {
+                System.out.println("| "+intMinyear + " |"); // Print the leap year
             }
         }
     }
 }
+
