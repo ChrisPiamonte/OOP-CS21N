@@ -15,5 +15,16 @@
 public class Group05 {
   public static void main(String[] args) {
 
-  }
+    //intNumber is the hardcoded number to find multiples of
+    //Change this value to test with other numbers
+        int intNumber = 10, intSumMultiples = 0;
+        //loop to print the multiples of intNumber from 1 to 100
+        for (int intIndex = intNumber; intIndex <= 100; intIndex += intNumber) {
+
+            System.out.print(intIndex + " ");
+            intSumMultiples += intIndex;
+        }
+        //print the sum of the multiples
+        System.out.println("\nSum of multiples: " + intSumMultiples);
+    }
 }
