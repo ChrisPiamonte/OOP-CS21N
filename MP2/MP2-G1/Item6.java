@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class item6 {
+public class Item6 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
@@ -24,4 +24,5 @@ public class item6 {
 
         System.out.println("Final single digit: " + num);
     }
+
 }
