@@ -5,7 +5,7 @@ import java.util.Scanner;
 // we display the result for all input
 // Factorial: n x (n - 1) x (n - 2).... x 1
 
-public class Factorial {
+public class Item1 {
     public static void main(String[] args){
 
         Scanner scanner = new Scanner(System.in);
