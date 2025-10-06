@@ -7,17 +7,17 @@ public class Item1{
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.print("Enter how many numbers to factor: ");
-        int count = Integer.parseInt(reader.readLine());
+        int intCount = Integer.parseInt(reader.readLine());
 
-        int[] intNumbers = new int[count];
-        long[] longFactorials = new long[count];
+        int[] intNumbers = new int[intCount];
+        long[] longFactorials = new long[intCount];
 
-        for (int i = 0; i < count; i++){
+        for (int i = 0; i < intCount; i++){
             System.out.print("Enter Number " + (i + 1) + ": ");
             intNumbers[i] = Integer.parseInt(reader.readLine());
         }
 
-        for (int i = 0; i < count; i++){
+        for (int i = 0; i < intCount; i++){
             long fact = 1;
             for (int j = 1; j <= intNumbers[i]; j++){
                 fact *= j;
@@ -25,7 +25,7 @@ public class Item1{
             longFactorials[i] = fact;
         }
         System.out.println("\nFactorials:");
-        for (int i = 0; i < count; i++){
+        for (int i = 0; i < intCount; i++){
             System.out.println(intNumbers[i] + "! = " + longFactorials[i]);
         }
     }
