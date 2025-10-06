@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class item10 {
+public class Item10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
@@ -32,3 +32,4 @@ public class item10 {
         System.out.println("The largest digit is: " + largest);
     }
 }
+
