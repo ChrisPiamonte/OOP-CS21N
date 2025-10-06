@@ -4,7 +4,7 @@ public class Item7 {
         Scanner input = new Scanner(System.in);
         System.out.println("Number Reversal Checker Program");
 
-        //Input number
+        //Asks the user to input a number
         System.out.print("Enter a number: ");
         int intNumber = input.nextInt();
 
@@ -30,3 +30,4 @@ public class Item7 {
         input.close();
     }
 }
+
