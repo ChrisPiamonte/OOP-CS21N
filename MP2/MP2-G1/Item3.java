@@ -1,6 +1,6 @@
 import java.util.Scanner; // Import Scanner for user input
 
-public class item3 {
+public class Item3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -39,4 +39,5 @@ public class item3 {
         // After loop, show total number of primes found
         System.out.println("\nTotal prime numbers found: " + count);
     }
+
 }
